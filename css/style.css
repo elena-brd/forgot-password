@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4;
+    color: #14213d;
+    padding: 0 2rem;
+}
+
+.container {
+    background: #fff;
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8rem auto;
+    padding: 2rem;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px 3px rgba(172, 172, 172, 0.2);
+}
+
+/* sign up cpntent */
+#sign-up-content {
+    text-align: right;
+    font-size: 14px;
+    color: #777;
+}
+
+#sign-up-content .btn-sign-up {
+    color: #0077b6;
+    text-decoration: none;
+    margin: 0 0.2rem;
+}
+
+#sign-up-content .btn-sign-up:hover {
+    color: #14213d;
+}
+
+/* password card */
+#password-content.password-form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5.5rem 0;
+}
+
+#password-content .content {
+    text-align: center;
+    width: 50%;
+}
+
+#password-content .content h2 {
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+#password-content .content p {
+    color: #777;
+    font-size: 14px;
+    padding: 0.9rem 1.8rem 1.8rem;
+    line-height: 1.6;
+}
+
+/* form */
+#form-input {
+    width: 43%;
+}
+
+#form-input label {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#form-input input {
+    margin-top: 0.4rem;
+    margin-bottom: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 3px;
+    border: 2px solid #ccc;
+}
+
+#form-input input:focus {
+    outline: none;
+    border: 2px solid #0077b6;
+}
+
+#form-input input,
+#form-input .btn-reset {
+    width: 100%;
+}
+
+#form-input .btn-reset {
+    display: inline-block;
+    cursor: pointer;
+    background: #14213d;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 0;
+    border-radius: 3px;
+    box-shadow: 0 4px 3px 1px rgba(172, 172, 172, 0.5);
+}
+
+#form-input .btn-reset:hover {
+    background: #0077b6;
+    box-shadow: none
+}
+
+.btn-back-signin {
+    font-size: 13px;
+    padding-top: 3rem;
+    color: #777;
+}
+
+.btn-back-signin:hover {
+    color: #0077b6;
+}
+
+@media(max-width: 798px) {
+    #sign-up-content {
+        text-align: center;
+    }
+
+    #password-content .content h2 {
+        font-size: 1.7rem;
+    }
+
+    #password-content .content p {
+        font-size: 12.4px;
+    }
+
+    #password-content .content {
+        width: 100%;
+    }
+
+    #form-input {
+        width: 100%;
+    }
+}
